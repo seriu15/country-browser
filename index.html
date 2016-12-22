@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AJAX and API</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <h1>Country browser</h1>
+      <button type="button" id="search">Search for country</button>
+      <input id="country-name" type="text" />
+      <br>
+      <div id="myCheckBox" class="hidden">
+        <h3>Select what you want to see:</h3>
+        <input id="trCapital" type="checkbox" value="trCapital" name="country" checked>
+        <label for="trCapital">Capital</label>
+        <input id="trRegion" type="checkbox" value="trRegion" name="country" checked>
+        <label for="trRegion">Region</label>
+        <input id="trSubregion" type="checkbox" value="trSubregion" name="country" checked>
+        <label for="trSubregion">Subregion</label>
+        <input id="trPopulation" type="checkbox" value="trPopulation" name="country" checked>
+        <label for="trPopulation">Population</label>
+        <br>
+        <input id="trDemonym" type="checkbox" value="trDemonym" name="country" checked>
+        <label for="trDemonym">Nationality</label>
+        <input id="trTimezones" type="checkbox" value="trTimezones" name="country" checked>
+        <label for="trTimezones">Time zones</label>
+        <input id="trBorders" type="checkbox" value="trBorders" name="country" checked>
+        <label for="trBorders">Borders</label>
+        <input id="trNativeName" type="checkbox" value="trNativeName" name="country" checked>
+        <label for="trNativeName">Native name</label>
+      </div>
+      <br>
+      <button type="button" id="myCheckBoxButton">Show more options</button>
+      <br>
+    </form>
+
+    <h2>Countries list</h2>
+    <ul id="countries">
+      <li>No matches found</li>
+    </ul>
+    <div id="table-template">
+      <table class="table-template">
+        <thead>
+          <tr class="trCountry">
+            <th class="country" colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="trCapital">
+            <td>Capital</td>
+            <td class="capital"></td>
+          </tr>
+          <tr class="trRegion">
+            <td>Region</td>
+            <td class="region"></td>
+          </tr>
+          <tr class="trSubregion">
+            <td>Subregion</td>
+            <td class="subregion"></td>
+          </tr>
+          <tr class="trPopulation">
+            <td>Population</td>
+            <td class="population"></td>
+          </tr>
+          <tr class="trDemonym">
+            <td>Nationality</td>
+            <td class="demonym"></td>
+          </tr>
+          <tr class="trTimezones">
+            <td>Time zones</td>
+            <td class="timezones"></td>
+          </tr>
+          <tr class="trBorders">
+            <td>Borders</td>
+            <td class="borders"></td>
+          </tr>
+          <tr class="trNativeName">
+            <td>Native name</td>
+            <td class="nativeName"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
